@@ -41,7 +41,7 @@ public class Student {
         this.currentRoom = currentRoom;
     }
 
-    // to display the input from the student
+    //  display the input from the student
     public void displayStudent() {
         System.out.println("--------------------------------");
         System.out.println("Student ID   : " + studentId);
