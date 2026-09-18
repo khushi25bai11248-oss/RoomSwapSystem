@@ -7,7 +7,7 @@ public class StudentManager {
         students = new ArrayList<>();
     }
 
-    // function to add student deatils
+    // function to add student information
     public boolean addStudent(Student student) {
         if (student == null || student.getStudentId() <= 0
                 || student.getName().trim().isEmpty()
@@ -21,7 +21,7 @@ public class StudentManager {
         return true;
     }
 
-    // function to find stundet id
+    // function to search stundet id
     public Student findStudentById(int studentId) {
         for (Student student : students) {
             if (student.getStudentId() == studentId) {
