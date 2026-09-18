@@ -8,7 +8,7 @@ public class RoomManager {
         rooms = new ArrayList<>();
     }
 
-    // function to add room
+    // functionfor adding room
     public boolean addRoom(Room room) {
         if (room == null || room.getRoomNumber().trim().isEmpty()
                 || room.getRoomType().trim().isEmpty()
@@ -19,7 +19,7 @@ public class RoomManager {
         return true;
     }
 
-    // functions to find room
+    // finding room
     public Room findRoom(String roomNumber) {
         for (Room room : rooms) {
             if (room.getRoomNumber().equalsIgnoreCase(roomNumber)) {
@@ -29,13 +29,13 @@ public class RoomManager {
         return null;
     }
 
-    // function to find if the room is available
+    // finding if the room is available
     public boolean isRoomAvailable(String roomNumber) {
         Room room = findRoom(roomNumber);
         return room != null && !room.isOccupied();
     }
 
-    // function to display rooms
+    //display rooms
     public void displayRooms() {
         if (rooms.isEmpty()) {
             System.out.println("No rooms found.");
