@@ -8,7 +8,7 @@ public class Admin {
     public String getName() {
         return name;
     }
-//to process request
+//for processing request
     public String processRequest(SwapManager swapManager, int requestId, int action) {
         SwapRequest request = swapManager.findRequestById(requestId);
         if (request == null) {
