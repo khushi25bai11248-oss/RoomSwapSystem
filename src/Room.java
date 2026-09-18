@@ -10,17 +10,17 @@ public class Room {
         this.occupied = occupied;
     }
 
-    // function to return room no
+    // function for returning room no.
     public String getRoomNumber() {
         return roomNumber;
     }
 
-    // function to return room type
+    // function for returning room type
     public String getRoomType() {
         return roomType;
     }
 
-    // function to check if the room is occupied
+    // function for checking if the room is occupied
     public boolean isOccupied() {
         return occupied;
     }
