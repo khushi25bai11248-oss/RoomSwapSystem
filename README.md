@@ -16,7 +16,7 @@ The application is designed as an educational Java project demonstrating classes
 
 ## ✨Features
 
--Register new students by entering their ID, name, email, and current room number.
+- Register new students by entering their ID, name, email, and current room number.
 
 -View the details of all registered students along with their assigned rooms.
 
