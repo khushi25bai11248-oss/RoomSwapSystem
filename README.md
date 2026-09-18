@@ -18,23 +18,23 @@ The application is designed as an educational Java project demonstrating classes
 
 - Register new students by entering their ID, name, email, and current room number.
 
--View the details of all registered students along with their assigned rooms.
+- View the details of all registered students along with their assigned rooms.
 
--Find students using their exact ID or by searching their name without worrying about letter case.
+- Find students using their exact ID or by searching their name without worrying about letter case.
 
--Add hostel rooms by specifying the room number, room type, and availability status.
+- Add hostel rooms by specifying the room number, room type, and availability status.
 
--View all rooms and check whether a particular room is occupied or available.
+- View all rooms and check whether a particular room is occupied or available.
 
--Submit room-swapping requests between two registered students.
+- Submit room-swapping requests between two registered students.
 
--View all swap requests and track their status as Pending, Accepted, or Rejected.
+- View all swap requests and track their status as Pending, Accepted, or Rejected.
 
--Approve a pending swap request and automatically exchange the rooms assigned to both students.
+- Approve a pending swap request and automatically exchange the rooms assigned to both students.
 
--Reject a pending request without making any changes to the students' room assignments.
+- Reject a pending request without making any changes to the students' room assignments.
 
--Prevent invalid operations such as duplicate student IDs, repeated room numbers, swapping with oneself, incorrect menu choices, and processing the same request more   than once.
+- Prevent invalid operations such as duplicate student IDs, repeated room numbers, swapping with oneself, incorrect menu choices, and processing the same request more    than once.
 
 ## Requirements
 
@@ -221,25 +221,35 @@ Sofia   -> A-101
 
 ## Testing Checklist
 
-Run the program from a fresh start and verify:
+The following test cases are used to check whether the RoomSwapSystem works correctly:
 
-- The five seeded rooms and three seeded students are displayed.
-- A valid student can be added to an existing room.
-- A duplicate student ID is rejected.
-- A student using an unknown room is rejected.
-- A room can be found using different letter casing.
-- A duplicate room number is rejected.
-- A valid swap request receives a sequential ID and `Pending` status.
-- A self-swap and a request with an unknown student are rejected.
-- Accepting a pending request exchanges both students' room assignments.
-- Rejecting a pending request leaves both room assignments unchanged.
-- An accepted or rejected request cannot be processed a second time.
-- Non-numeric input does not terminate the program.
+- Verify that the five default rooms and three default students appear when the program starts.
 
+- Check whether a new student can be successfully added to an existing room.
+
+- Confirm that the system prevents registration with an already-used Student ID.
+
+- Test whether adding a student with an invalid room number is rejected.
+
+- Verify that room searches work correctly regardless of uppercase or lowercase letters.
+
+- Check that the system rejects duplicate room numbers.
+
+- Confirm that a valid room-swap request receives the next sequential Request ID and Pending status.
+
+- Test that students cannot swap rooms with themselves or with an unregistered student.
+
+- Verify that accepting a pending request exchanges the room assignments of both students.
+
+- Confirm that rejecting a request keeps the original room assignments unchanged.
+
+- Check that an already accepted or rejected request cannot be processed again.
+
+- Test that entering non-numeric input does not cause the program to crash.
 ## Limitations
 
-- Data is stored only in `ArrayList` instances and is not persisted.
-- There is no login or distinction between student and administrator sessions.
-- The console does not automatically synchronize room occupancy with student assignments.
-- Room capacity, eligibility rules, timestamps, notifications, and approval history are not implemented.
-- The project currently has no automated unit-test suite; testing is performed through the console workflow above.
+- The application stores data temporarily in Java ArrayList objects, so information is lost when the program closes.
+- The system does not currently include a login facility or separate access for students and administrators
+- Room occupancy status is not automatically updated whenever student room assignments change.
+- Features such as room capacity, swap eligibility rules, request timestamps, notifications, and approval history are not included.
+- The project does not currently have an automated unit-testing framework. Testing is carried out manually through the console using the listed test cases.
