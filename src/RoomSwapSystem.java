@@ -16,7 +16,7 @@ public class RoomSwapSystem {
         addSampleData();
     }
 
-    // creation of objects
+    //  objects creation
     public static void main(String[] args) {
         RoomSwapSystem system = new RoomSwapSystem();
         system.run();
