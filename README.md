@@ -1,8 +1,8 @@
-# 🏠Roommate / Room Swapping System
+# Roommate / Room Swapping System
 
 A Java command-line application for managing hostel students, rooms, and room-swap requests. Students and rooms are held in memory while the program is running, and a hostel administrator can approve or reject pending requests.
 
-## 📌Overview
+## Overview
 
 Manual room-change requests can be difficult to track and may lead to duplicate processing or incorrect room assignments. This project provides a small, modular workflow for:
 
@@ -27,7 +27,7 @@ The application is designed as an educational Java project demonstrating classes
 - Reject a pending request without changing room assignments.
 - Reject duplicate student IDs, duplicate room numbers, self-swaps, invalid menu choices, and attempts to process a request twice.
 
-## 📋Requirements
+## Requirements
 
 - Java Development Kit (JDK) 8 or later
 - A terminal or command prompt
@@ -40,7 +40,7 @@ java -version
 javac -version
 ```
 
-## ⚙️Compile and Run
+## Compile and Run
 
 From the project root, compile all source files:
 
@@ -89,7 +89,7 @@ The program starts with sample data and repeatedly displays this menu:
 6. For a rejected request, no student data changes and the status becomes `Rejected`.
 7. A request whose status is no longer `Pending` cannot be processed again.
 
-### 🌱Seeded Data
+### Seeded Data
 
 Each application run begins with the following records:
 
@@ -129,7 +129,7 @@ Each application run begins with the following records:
 - Room lookup is case-insensitive, so `a-101` and `A-101` refer to the same room.
 - An invalid menu option displays an error and returns to the main menu.
 
-## 🏗️Architecture
+## Architecture
 
 `RoomSwapSystem` is the entry point and coordinates the console menu, input, and managers:
 
@@ -176,7 +176,7 @@ RoomSwapProject/
 └── statement.md              # Problem statement and scope
 ```
 
-## 🔄Example Workflow
+## Example Workflow
 
 1. Start the application with `java -cp src RoomSwapSystem`.
 2. Choose `7` to create a room-swap request.
@@ -210,7 +210,7 @@ Dhriti  -> A-102
 Sofia   -> A-101
 ```
 
-## 🧪Testing Checklist
+## Testing Checklist
 
 Run the program from a fresh start and verify:
 
@@ -227,7 +227,7 @@ Run the program from a fresh start and verify:
 - An accepted or rejected request cannot be processed a second time.
 - Non-numeric input does not terminate the program.
 
-## ⚠️Limitations
+## Limitations
 
 - Data is stored only in `ArrayList` instances and is not persisted.
 - There is no login or distinction between student and administrator sessions.
