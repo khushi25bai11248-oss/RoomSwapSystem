@@ -16,16 +16,25 @@ The application is designed as an educational Java project demonstrating classes
 
 ## ✨Features
 
-- Add students with an ID, name, email, and existing room number.
-- Display all registered students and their current rooms.
-- Search for a student by exact ID or partial, case-insensitive name.
-- Add rooms with a room number, room type, and occupied/available status.
-- Display all rooms and check one room's availability.
-- Create room-swap requests between two registered students.
-- Display requests and their `Pending`, `Accepted`, or `Rejected` status.
-- Accept a pending request and exchange the two students' room values.
-- Reject a pending request without changing room assignments.
-- Reject duplicate student IDs, duplicate room numbers, self-swaps, invalid menu choices, and attempts to process a request twice.
+-Register new students by entering their ID, name, email, and current room number.
+
+-View the details of all registered students along with their assigned rooms.
+
+-Find students using their exact ID or by searching their name without worrying about letter case.
+
+-Add hostel rooms by specifying the room number, room type, and availability status.
+
+-View all rooms and check whether a particular room is occupied or available.
+
+-Submit room-swapping requests between two registered students.
+
+-View all swap requests and track their status as Pending, Accepted, or Rejected.
+
+-Approve a pending swap request and automatically exchange the rooms assigned to both students.
+
+-Reject a pending request without making any changes to the students' room assignments.
+
+-Prevent invalid operations such as duplicate student IDs, repeated room numbers, swapping with oneself, incorrect menu choices, and processing the same request more   than once.
 
 ## Requirements
 
